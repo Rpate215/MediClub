@@ -1,0 +1,26 @@
+<div>
+        <ul *ngFor ="let doctor of doctors let i = index">
+            <li>
+                <br>[{{i}}]<br>
+                ID: {{doctors._id}}:<br>
+                First Name: {{doctors.firstName}}<br> 
+                Last Name: {{doctors.lastName}}<br>
+                Gender: {{doctors.gender}}<br> 
+                Specialty: {{doctors.specialty}}<br>
+                Education: {{doctors.education}}<br>
+                Email ID: {{doctors.emailid}}<br>
+                Contact NO: {{doctors.contactno}}<br>
+                Bio: {{doctors.bio}}<br>
+                Hospital Name: {{doctors.hospitalname}}<br>
+                Street: {{doctors.street}}<br>
+                City: {{doctors.city}}<br>
+                State: {{doctors.state}}<br>
+                Zip Code: {{doctors.zipcode}}<br>
+                Available Time: {{doctors.availabletime}}<br>
+                Website: {{doctors.website}}
+                
+                </li>
+                <button mat-button color="warn" (click)="onDelete(doctors._id)">DELETE</button>&nbsp;
+                <button mat-button color="accent" (clik)="['/editDoctor', doctors._id]">UPDATE</button>
+            </ul>
+    </div>

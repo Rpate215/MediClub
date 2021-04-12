@@ -1,0 +1,88 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~material-design-icons/iconfont/material-icons.css';
+header{
+    
+    padding: 1em;
+    color: white;
+    background-color: #05386B;
+    clear: left;
+    text-align: center;
+    font-family: Courier;
+}
+footer{
+	
+	position:fixed;bottom:0;left:0;right:0;height:0px;
+	padding: 0.0em;
+    color: white;
+    background-color: #05386B;
+    clear: left;
+    font-family: Courier;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Courier;
+    background-color: #379683;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Courier;
+}
+
+li a:hover {
+    background-color: #111;
+}
+body, html{
+    background:url("img1.jpg"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        background-color:#5CDB95 ;        
+}
+form{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.but{
+    text-align: center;
+}
+.button {
+
+    background-color: #4CAF50;
+    border: bold;
+    color: rgb(177, 169, 223);
+    padding: 15px 32px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+span.big_text{
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0);
+
+}
+span.text{
+    background: rgba(0, 0, 0, 0);
+    font-weight: bold; 
+    font-size :20px;
+
+}

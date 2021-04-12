@@ -1,0 +1,97 @@
+<form (ngSubmit)="onSubmit()" #form="ngForm" >
+<h1>{{mode}} Doctor Registration Form</h1><br>
+
+
+  <h2> Doctor Information</h2>  
+
+    <label>
+      First Name:
+      <input type="text" id="firstname" [(ngModel)]="firstName" name="firstname" >
+    </label><br><br>
+  
+    <label>
+      Last Name:
+      <input type="text" id="lastname" [(ngModel)]="lastName" name="lastname" >
+    </label><br><br>
+
+    <label>
+      Gender:
+    </label>
+      <input type="radio" id="male" name="gender" value="male" [(ngModel)]="gender" >Male
+      <input type="radio" id="female" name="gender" value="female" [(ngModel)]="gender">Female
+    <br><br>
+
+    
+
+    <label>
+      Specialty:
+      <select name="doctor" id="doctor" [(ngModel)]="specialty">
+        <option value="Cardiologist">Cardiologist</option>
+        <option value="Pathologist">Pathologist</option>
+        <option value="Pediatrician">Pediatrician</option>
+        <option value="Radiologist">Radiologist</option>
+        <option value="Other">Other</option>
+      </select>
+  </label><br><br>
+    
+    <label>
+        Education:<textarea cols="20" rows="2" name="education" id="education" [(ngModel)]="education" ></textarea>
+        
+    </label><br><br>
+
+    <label>
+        Email ID:
+        <input type="text" id="email" name="email" [(ngModel)]="emailid" >
+    </label><br><br>
+
+    <label>
+        Contact NO:
+        <input type="text" id="phone" name="phone" [(ngModel)]="contactno" >
+    </label><br><br>
+
+    <label>Bio:</label><br>
+            <textarea cols="40" rows="4" name="bio" id="bio" placeholder="Enter the Details" [(ngModel)]="bio" ></textarea>
+          <br><br>
+  
+          <fieldset><legend>Hospital Details</legend>
+        
+        
+      <label>
+            Hospital Name:
+            <input type="text" id="hospitalname" name="hospitalname" [(ngModel)]="hospitalname" >
+          </label><br><br>
+
+        <label>
+          Street:
+          <input type="text" id="street" name="street" [(ngModel)]="street" >
+        </label><br><br>
+      
+        <label>
+          City:
+          <input type="text" id="city" name="city" [(ngModel)]="city" >
+        </label><br><br>
+        
+        <label>
+          State:
+          <input type="text" id="state" [(ngModel)]="state" name="state" >
+        </label><br><br>
+        <label>
+          Zip Code:
+          <input type="text" id="zipcode" name="zipcode" [(ngModel)]="zipcode" >
+        </label><br><br>
+
+        <div>
+          <label>Available Time: <input type="time" name="availabletime" id="availabletime" [(ngModel)]="availabletime" >
+           </label><br> 
+        </div><br>
+
+        <label>Website:
+          <input type="text" id="website" name="website" [(ngModel)]="website" ></label>
+        <br><br>
+      </fieldset>
+          
+        
+    <button type="submit" mat-raised-button color=primary>Submit</button>
+
+  </form>
+  
